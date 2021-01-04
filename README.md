@@ -8,3 +8,5 @@ Se trata de un un programa desarrollado para M5Stack Fire consulta los datos abi
 M5Stack es un ESP8266 que se conecta a la WiFi indicada hardcodeada en el código y consulta los datos de sensores/CO2 industriales o desarrollados por ATDFiWare para su estudio y comparación con diferente electrónica y comunicaciones. Se ha desarrollado un programa de representación basado en los ejemplos de M5Stack para su representación, consultado los datos OPEN de ATDFiWare, deserializándolos y representandolos en el LCD del dispositivo.
 
 Con la pulsación del botón A podemos pasar de sensor y con la pulsación del botón B apagamos el dispositivo. En la pantalla se representa un mapeo de los valores "ppm" de cada sensor en una escala del 1 a 100%, así como los valores correspondiente de cada sensor, temperatura y el time en que ha registrado la última lectura en formato GMT.
+
+![Alt text](images/M5Stack.jpeg?raw=true "M5Stack ATDFiWare CO2 Gauge")
