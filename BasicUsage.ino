@@ -96,8 +96,8 @@ void loop()
 
             http.begin(urlpost);                                  //Specify request destination    
             http.addHeader("Content-Type", "text/plain");         //Specify content-type header
-            http.addHeader("Fiware-Service", "smarttrebol");      //Specify content-type header
-            http.addHeader("Fiware-ServicePath", "/rabanales");   //Specify content-type header
+            http.addHeader("Fiware-Service", "<FiWare-Service>");      //Specify content-type header
+            http.addHeader("Fiware-ServicePath", "<FiWare-Servicepath>");   //Specify content-type header
             int httpCode = http.POST("ppm|"+String(CO2)+"|temp|"+String(Temp_1));         //Send the request
             String payload = http.getString();
             http.end();
