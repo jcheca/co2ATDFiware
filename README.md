@@ -15,9 +15,21 @@ Por lo tanto, teniendo el sistema de gestión de datos que registra información
 
 A continuación destacaremos la instalación e integración con FiWare de los sensore de bajo coste:
 
-# 1.- Sensor MHZ19
+# 1.- Sensor MHZ19 con NodeMCU V3.0.0.
 
+El sensor:
 
+![Alt text](images/MH-Z19.jpg?raw=true "Sensor CO2 MH-Z19")
+
+El esquema de conexión a NodeMCU: 
+
+![Alt text](images/MH-Z19.jpg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3")
+
+El código correspondiente a la conexión WiFi del ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba.
+
+# BasicUsage.ino
+
+Es el programa de Arduino encargado de realizar la operación descrita anteriormente para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
 
 # BasicUsageM5Stack.ino
 
@@ -29,5 +41,4 @@ Con la pulsación del botón A podemos pasar de sensor y con la pulsación del b
 
 ![Alt text](images/M5Stack.jpeg?raw=true "M5Stack ATDFiWare CO2 Gauge")
 
-# BasicUsage.ino
 
