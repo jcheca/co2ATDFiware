@@ -2,7 +2,7 @@
 
 #include <Arduino.h>
 #include "MHZ19.h"                                        
-#include <SoftwareSerial.h>                                // Remove if using HardwareSerial
+#include <SoftwareSerial.h> 
 
 //
 // FiWare
@@ -71,8 +71,7 @@ void loop()
         usual documented command with getCO2(false) */
 
         CO2 = myMHZ19.getCO2();                             // Request CO2 (as ppm)                               
-        Temp = myMHZ19.getTemperature(true,true);           // Request Temperature (as Celsius)
-        Temp_1 = myMHZ19.getTemperature(true);           // Request Temperature (as Celsius)
+        Temp_1 = myMHZ19.getTemperature(true);              // Request Temperature (as Celsius)
     
         #ifdef _DEBUG_
            Serial.print("CO2 (ppm): ");
@@ -88,11 +87,11 @@ void loop()
 
           if(WiFi.status()== WL_CONNECTED){
 
-            http.begin(urlpost);                                  //Specify request destination    
-            http.addHeader("Content-Type", "text/plain");         //Specify content-type header
-            http.addHeader("Fiware-Service", "<FiWare-Service>");      //Specify content-type header
-            http.addHeader("Fiware-ServicePath", "<FiWare-Servicepath>");   //Specify content-type header
-            int httpCode = http.POST("ppm|"+String(CO2)+"|temp|"+String(Temp_1));         //Send the request
+            http.begin(urlpost);                                  			// Specify request destination    
+            http.addHeader("Content-Type", "text/plain");         			// Specify content-type header
+            http.addHeader("Fiware-Service", "<FiWare-Service>");      
+            http.addHeader("Fiware-ServicePath", "<FiWare-Servicepath>");   
+            int httpCode = http.POST("ppm|"+String(CO2)+"|temp|"+String(Temp_1));       // Send the request
             String payload = http.getString();
             http.end();
   
