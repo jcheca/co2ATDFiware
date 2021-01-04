@@ -45,5 +45,7 @@ Con la pulsación del botón A podemos pasar de sensor y con la pulsación del b
 
 ![Ver VIDEO](images/M5Stack.jpeg?raw=true "M5Stack ATDFiWare CO2 Gauge")(https://youtu.be/c4iqZGf_Hb8)
 
+[![Ver VIDEO](images/M5Stack.jpeg?raw=true)](https://youtu.be/c4iqZGf_Hb8)
+
 
 
