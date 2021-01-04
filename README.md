@@ -5,7 +5,12 @@ En el Aula de Transformación Digital FiWare de la Universidad de Córdoba se ha
 
 La idea de este repositorio es probar diferentes tipos de sensores de bajo coste y realizar estudios de comparación con los semejantes industriales de los que disponemos utilizando otros tipos de tecnologías de comunicación con el fin de ser más accesibles por el usuario final y poder ser instalados en nuestra propia estancias, despachos o casas.
 
-Toda la información sobre los sensores del aula se puede encontrar en https://www.uco.es/atdfiware/open-data donde se describe los datos capturados por el sensor, integración con FiWare, el sistema de comunicación y protocolo de acceso así como enlaces a la página del producto. A continuación destacaremos la instalación e integración con FiWare de los sensore de bajo coste.
+Toda la información sobre los sensores del aula se puede encontrar en https://www.uco.es/atdfiware/open-data donde se describe los datos capturados por el sensor, integración con FiWare, el sistema de comunicación y protocolo de acceso así como enlaces a la página del producto. 
+
+![Alt text](images/PanelSensor.png?raw=true "Dashboard Integración Sensores CO2 FiWare")
+
+
+A continuación destacaremos la instalación e integración con FiWare de los sensore de bajo coste.
 
 # 1.- Sensor MHZ19
 
