@@ -1,18 +1,23 @@
 # co2ATDFiware
 Prueba de Sensores CO2. Integración Stack FiWare
 
-En el Aula de Transformación Digital FiWare de la Universidad de Córdoba se han instalado diferentes tipos de sensores para la calidad del aire, concretamente dispositivos industriales listos para su configuración e instalación. Estos dispositivos tienen un coste determinado por unidad y unas caracteristicas de comuicación determinadas.
+En el Aula de Transformación Digital FiWare de la Universidad de Córdoba se han instalado diferentes tipos de sensores para la calidad del aire, concretamente dispositivos industriales listos para su configuración e instalación. Estos dispositivos tienen un coste determinado por unidad y unas caracteristicas de comuicación concretas.
 
-La idea de este repositorio es probar diferentes tipos de sensores de bajo coste y realizar estudios de comparación con los semejantes industriales de los que disponemos utilizando otros tipos de tecnologías de comunicación con el fin de ser más accesibles por el usuario final y poder ser instalados en nuestra propia estancias, despachos o casas.
+La idea de este repositorio es probar diferentes tipos de sensores de bajo coste y realizar estudios de comparación con los semejantes industriales de los que disponemos utilizando otros tipos de tecnologías de comunicación con el fin de ser más accesibles por el usuario final y poder ser instalados en nuestra propia estancia, despacho o casa.
 
-Toda la información sobre los sensores del aula se puede encontrar en https://www.uco.es/atdfiware/open-data donde se describe los datos capturados por el sensor, integración con FiWare, el sistema de comunicación y protocolo de acceso así como enlaces a la página del producto. 
+Toda la información sobre los sensores del aula se puede encontrar en https://www.uco.es/atdfiware/open-data donde se describe los datos capturados por el sensor, integración con FiWare, el sistema de comunicación y protocolo de acceso así como enlaces a la página del producto.  Los datos del Stack FiWare se pueden consultar a través de sus protocolos (NGSI/V2 ó NGSI TSDB) y su consumo, también es posible, a través de herramientas de graficación histórica como la representada en la imagen a continuación por Grafana.
 
 ![Alt text](images/PanelSensor.png?raw=true "Dashboard Integración Sensores CO2 FiWare")
 
+Además estos mismos datos se ofrecen en abierto para que puedan ser consultados desde cualquier aplicación con simples peticiones HTTP y deserialización de información en formato JSON.
 
-A continuación destacaremos la instalación e integración con FiWare de los sensore de bajo coste.
+Por lo tanto, teniendo el sistema de gestión de datos que registra información sensórica y la ofrece para su consumo, sólo nos queda ir probando los diferentes tipos de sensores ambientales CO2 que vayamos encontrando y comprobar su funcionamiento a través de la representación de los datos en las posibilidades anteriormente descritas.
+
+A continuación destacaremos la instalación e integración con FiWare de los sensore de bajo coste:
 
 # 1.- Sensor MHZ19
+
+
 
 # BasicUsageM5Stack.ino
 
