@@ -43,7 +43,7 @@ M5Stack es un ESP8266 que se conecta a la WiFi indicada hardcodeada en el códig
 
 Con la pulsación del botón A podemos pasar de sensor y con la pulsación del botón B apagamos el dispositivo. En la pantalla se representa un mapeo de los valores "ppm" de cada sensor en una escala del 1 a 100%, así como los valores correspondiente de cada sensor, temperatura y el time en que ha registrado la última lectura en formato GMT.
 
-Ver video en el siguiente enlace de la imagen:
+Haz click en la imagen para ver video con una prueba:
 
 [![Ver VIDEO](images/M5Stack.jpeg?raw=true)](https://youtu.be/c4iqZGf_Hb8)
 
