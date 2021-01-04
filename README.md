@@ -23,7 +23,7 @@ El sensor:
 
 El esquema de conexión a NodeMCU: 
 
-![Alt text](images/MH-Z19.jpg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3")
+![Alt text](images/schema01.jpeg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3")
 
 El código correspondiente a la conexión WiFi del ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba.
 
