@@ -29,7 +29,7 @@ El resultado final, antes de "envasar" sería algo parecido a esto:
 
 ![Alt text](images/schema02.jpeg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3 Real")
 
-El código correspondiente a la conexión WiFi del ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba.
+El código correspondiente a la conexión WiFi del ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba es el que describimos a continuación:
 
 # BasicUsage.ino
 
