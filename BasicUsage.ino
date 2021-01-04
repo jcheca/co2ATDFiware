@@ -14,11 +14,6 @@
 const char* ssid = "SSID";
 const char* password = "password";
 
-// Datos OpenWeatherMap
-String hostOpenWeatherMap = "http://api.openweathermap.org/data/2.5/weather";
-String idCiudad = "2519240"; // Sustituye por el id de tu ciudad
-String apiKey = "<apikey>"; // Sustituye por tu API Key
-
 // FiWare Config UL IoTAgent
 const String host = "Stack FiWare Server UL";
 const String port = "Stack FiWare Port UL";
@@ -60,7 +55,6 @@ void setup()
    WiFi.begin(ssid, password);
    while (WiFi.status() != WL_CONNECTED) 
       delay(500); 
-
 
 }
 
@@ -110,133 +104,12 @@ void loop()
               Serial.println(httpCode);
             #endif 
 
-            // Obtener datos Meteorológicos
-            // obtenerDatosOpenWeather();
-
-            
-            
           }
                     
           //
           getDataPost = millis();
         }
 
-
-        
     }
 }
 
-
-
-
-void obtenerDatosOpenWeather() {
-  
-  // Crear URL para hacer la pretición
-  String url = hostOpenWeatherMap;
-  url += "?id=";
-  url += idCiudad;
-  url += "&appid=";
-  url += apiKey;
- 
-  #ifdef _DEBUG_
-    Serial.print("URL petición HTTP: ");
-    Serial.println(url);
-  #endif
- 
-  // Conexión con el servidor y configuración de la petición
-  http.begin(url);
- 
-  // Envío de petición HTTP al servidor
-  int codigoHttp = http.GET();
- 
-  #ifdef _DEBUG_
-    Serial.print("Codigo HTTP: ");
-    Serial.println(codigoHttp);
-  #endif
- 
-  // Si todo ha ido bien devolverá un número positivo mayor que cero
-  if (codigoHttp > 0) {
-    // Si ha encontrado el recurso en el servidor responde un código 200
-    if (codigoHttp == HTTP_CODE_OK) {
-      #ifdef _DEBUG_
-        Serial.print("Archivo JSON: ");
-        Serial.println(http.getString());
-      #endif
- 
-      // Parsear archivo JSON
-      // Para obtener tamaño del buffer vistiar https://arduinojson.org/v6/assistant/
-      const size_t capacity = JSON_ARRAY_SIZE(3) +
-                              2 * JSON_OBJECT_SIZE(1) +
-                              JSON_OBJECT_SIZE(2) +
-                              3 * JSON_OBJECT_SIZE(4) +
-                              JSON_OBJECT_SIZE(5) +
-                              JSON_OBJECT_SIZE(6) +
-                              JSON_OBJECT_SIZE(12) +
-                              304;
-      DynamicJsonDocument doc(capacity);
- 
-      // Parsear objeto JSON
-      DeserializationError error = deserializeJson(doc, http.getString());
-      if (error) {
-        // Si hay error no se continua
-        #ifdef _DEBUG_
-          Serial.print("Fallo al parsear JSON. Error: ");
-          Serial.println(error.c_str());
-        #endif
-        return;
-      }
- 
-      // Temperatura
-      float tempF = doc["main"]["temp"];
-      tempF = tempF - 273.15; // A grados Celsius
-      char temp[7];
-      snprintf(temp, 7, "%.0f C", tempF);
- 
-      // Humedad
-      String humedadS = String(int(doc["main"]["humidity"])) + " %";
-      char humedad[7];
-      humedadS.toCharArray(humedad, 7);
- 
-      // Temperatura mínima
-      float tempMinF = doc["main"]["temp_min"];
-      tempMinF = tempMinF - 273.15; // A grados Celsius
-      char tempMin[7];
-      snprintf(tempMin, 7, "%.0f C", tempMinF);
- 
-      // Temperatura máxima
-      float tempMaxF = doc["main"]["temp_max"];
-      tempMaxF = tempMaxF - 273.15; // A grados Celsius
-      char tempMax[7];
-      snprintf(tempMax, 7, "%.0f C", tempMaxF);
- 
-      // Viento
-      float vientoF = doc["wind"]["speed"];
-      char viento[8];
-      snprintf(viento, 8, "%.0f m/S", vientoF);
- 
-      // Ciudad
-      const char* ciudad = doc["name"];
-     
-      #ifdef _DEBUG_
-        Serial.println("Datos OpenWeatherMap");
-        Serial.print("Temperatura: ");
-        Serial.println(temp);
-        Serial.print("Humedad: ");
-        Serial.println(humedad);
-        Serial.print("Temp. Min: ");
-        Serial.println(tempMin);
-        Serial.print("Temp. Max: ");
-        Serial.println(tempMax);
-        Serial.print("Viento: ");
-        Serial.println(viento);
-
-        Serial.print("Ciudad: ");
-        Serial.println(ciudad);
-      #endif
-    } else {
-      #ifdef _DEBUG_
-        Serial.println("Error al recibir petición.");
-      #endif
-    }
-  }
-}
