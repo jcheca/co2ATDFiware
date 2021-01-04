@@ -9,4 +9,4 @@ M5Stack es un ESP8266 que se conecta a la WiFi indicada hardcodeada en el códig
 
 Con la pulsación del botón A podemos pasar de sensor y con la pulsación del botón B apagamos el dispositivo. En la pantalla se representa un mapeo de los valores "ppm" de cada sensor en una escala del 1 a 100%, así como los valores correspondiente de cada sensor, temperatura y el time en que ha registrado la última lectura en formato GMT.
 
-![Alt text](images/M5Stack.jpeg?raw=true "M5Stack ATDFiWare CO2 Gauge" | width=48)
+![Alt text](images/M5Stack.jpeg?raw=true "M5Stack ATDFiWare CO2 Gauge"){:height="24px" width="48px"}
