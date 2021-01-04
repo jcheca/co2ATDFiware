@@ -47,8 +47,6 @@ Con la pulsación del botón A podemos pasar de sensor y con la pulsación del b
 
 Video en acción:
 
-https://github.com/jcheca/co2ATDFiware
-
-[![Watch the video](https://youtu.be/c4iqZGf_Hb8)
+[![Watch the video]](https://youtu.be/c4iqZGf_Hb8)
 
 
