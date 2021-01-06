@@ -47,12 +47,13 @@ Los códigos correspondientes a la conexión WiFi de los ESP8266 (NodeMCU), la r
 
 # 1.- Sensor MHZ19 con NodeMCU V3.0.0.
 
-# BasicUsage.ino (for MHZ19)
+# BasicUsageMHZ19.ino (for MHZ19)
 
-Es el programa de Arduino encargado de realizar la operación descrita anteriormente para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
+Es el programa de Arduino encargado de realizar la operación descrita anteriormente por el sensor MHZ19 para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
 
 # BasicUsageCCS811.ino (pdte) con NodeMCU Amica ESP8266-E
 
+Es el programa de Arduino encargado de realizar la operación descrita anteriormente por el sensor CCS811 para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
 
 # BasicUsageM5Stack.ino
 
