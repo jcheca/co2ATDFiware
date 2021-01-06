@@ -29,11 +29,26 @@ El resultado final, antes de "envasar" sería algo parecido a esto:
 
 ![Alt text](images/schema02.jpeg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3 Real")
 
-El código correspondiente a la conexión WiFi del ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba es el que describimos a continuación:
+# 2.- Sensor CCS811 con NodeMCU Amica ESP8266-E
 
-# BasicUsage.ino
+El sensor:
+
+El esquema de conexión a NodeMCU:
+
+El resultado final, antes de "envasar":
+
+# 3.- Códigos de programación.
+
+Los códigos correspondientes a la conexión WiFi de los ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba es el que describimos a continuación dependiendo del tipo de MCU:
+
+# 1.- Sensor MHZ19 con NodeMCU V3.0.0.
+
+# BasicUsage.ino (for MHZ19)
 
 Es el programa de Arduino encargado de realizar la operación descrita anteriormente para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
+
+# BasicUsageCCS811 con NodeMCU Amica ESP8266-E
+
 
 # BasicUsageM5Stack.ino
 
