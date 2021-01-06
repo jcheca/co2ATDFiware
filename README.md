@@ -35,7 +35,7 @@ El sensor:
 
 ![Alt text](images/ccs811.png?raw=true "Sensor CO2 CCS811")
 
-El esquema de conexión a NodeMCU:
+El esquema de conexión a NodeMCU según las indicación y uso de librería de Maarten Pennigs https://github.com/maarten-pennings/CCS811:
 
 ![Alt text](images/schema03.jpg?raw=true "Conexión Sensor CO2 CCS811 con NodeMCU Amica ESP8266-E")
 
@@ -51,7 +51,7 @@ Los códigos correspondientes a la conexión WiFi de los ESP8266 (NodeMCU), la r
 
 Es el programa de Arduino encargado de realizar la operación descrita anteriormente para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
 
-# BasicUsageCCS811 con NodeMCU Amica ESP8266-E
+# BasicUsageCCS811.ino (pdte) con NodeMCU Amica ESP8266-E
 
 
 # BasicUsageM5Stack.ino
