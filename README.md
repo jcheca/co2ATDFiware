@@ -33,7 +33,11 @@ El resultado final, antes de "envasar" sería algo parecido a esto:
 
 El sensor:
 
+![Alt text](images/ccs811.png?raw=true "Sensor CO2 CCS811")
+
 El esquema de conexión a NodeMCU:
+
+![Alt text](images/schema03.jeg?raw=true "Conexión Sensor CO2 CCS811 con NodeMCU Amica ESP8266-E")
 
 El resultado final, antes de "envasar":
 
