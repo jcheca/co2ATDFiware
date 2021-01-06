@@ -37,7 +37,7 @@ El sensor:
 
 El esquema de conexión a NodeMCU:
 
-![Alt text](images/schema03.jeg?raw=true "Conexión Sensor CO2 CCS811 con NodeMCU Amica ESP8266-E")
+![Alt text](images/schema03.jpg?raw=true "Conexión Sensor CO2 CCS811 con NodeMCU Amica ESP8266-E")
 
 El resultado final, antes de "envasar":
 
