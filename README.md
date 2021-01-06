@@ -45,8 +45,6 @@ El resultado final, antes de "envasar":
 
 Los códigos correspondientes a la conexión WiFi de los ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba es el que describimos a continuación dependiendo del tipo de MCU:
 
-# 1.- Sensor MHZ19 con NodeMCU V3.0.0.
-
 # BasicUsageMHZ19.ino (for MHZ19)
 
 Es el programa de Arduino encargado de realizar la operación descrita anteriormente por el sensor MHZ19 para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
@@ -54,6 +52,8 @@ Es el programa de Arduino encargado de realizar la operación descrita anteriorm
 # BasicUsageCCS811.ino con NodeMCU Amica ESP8266-E
 
 Es el programa de Arduino encargado de realizar la operación descrita anteriormente por el sensor CCS811 para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
+
+# 4.- Representación de datos.
 
 # BasicUsageM5Stack.ino
 
