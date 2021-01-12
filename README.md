@@ -29,6 +29,11 @@ El resultado final, antes de "envasar" sería algo parecido a esto:
 
 ![Alt text](images/schema02.jpeg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3 Real")
 
+Con el envase :-)
+
+![Alt text](images/case.jpg?raw=true "Sensor CO2 Envase")
+
+
 # 2.- Sensor CCS811 con NodeMCU Amica ESP8266-E
 
 El sensor:
