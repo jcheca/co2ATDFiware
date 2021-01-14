@@ -18,20 +18,25 @@ A continuación destacaremos la instalación e integración con FiWare de los se
 # 1.- Sensor MHZ19 con NodeMCU V3.0.0.
 
 El sensor:
+
 ![Alt text](images/MH-Z19.jpg?raw=true "Sensor CO2 MH-Z19")
 
 El esquema de conexión a NodeMCU: 
+
 ![Alt text](images/schema01.jpeg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3")
 
 Resultado final con el envase :-)
+
 ![Alt text](images/case.jpg?raw=true "Sensor CO2 Envase")
 
 # 2.- Sensor CCS811 con NodeMCU Amica ESP8266-E
 
 El sensor:
+
 ![Alt text](images/ccs811.png?raw=true "Sensor CO2 CCS811")
 
 El esquema de conexión a NodeMCU según las indicación y uso de librería de Maarten Pennigs https://github.com/maarten-pennings/CCS811:
+
 ![Alt text](images/schema03.jpg?raw=true "Conexión Sensor CO2 CCS811 con NodeMCU Amica ESP8266-E")
 
 El resultado final, antes de "envasar":
@@ -39,6 +44,7 @@ El resultado final, antes de "envasar":
 # 3.- Sensor MHZ14 con NodeMCU V3.0.0.
 
 El sensor:
+
 ![Alt text](images/mh-z14.png?raw=true "Sensor CO2 MH-Z14")
 
 
