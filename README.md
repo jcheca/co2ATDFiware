@@ -25,11 +25,7 @@ El esquema de conexión a NodeMCU:
 
 ![Alt text](images/schema01.jpeg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3")
 
-El resultado final, antes de "envasar" sería algo parecido a esto:
-
-![Alt text](images/schema02.jpeg?raw=true "Conexión Sensor CO2 MH-Z19 con NodeMCU V3 Real")
-
-Con el envase :-)
+Resultado final con el envase :-)
 
 ![Alt text](images/case.jpg?raw=true "Sensor CO2 Envase")
 
@@ -46,7 +42,15 @@ El esquema de conexión a NodeMCU según las indicación y uso de librería de M
 
 El resultado final, antes de "envasar":
 
-# 3.- Códigos de programación.
+# 3.- Sensor MHZ14 con NodeMCU V3.0.0.
+
+El sensor:
+
+![Alt text](images/mh-z14.png?raw=true "Sensor CO2 MH-Z14")
+
+
+
+# 4.- Códigos de programación.
 
 Los códigos correspondientes a la conexión WiFi de los ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba es el que describimos a continuación dependiendo del tipo de MCU:
 
@@ -58,7 +62,7 @@ Es el programa de Arduino encargado de realizar la operación descrita anteriorm
 
 Es el programa de Arduino encargado de realizar la operación descrita anteriormente por el sensor CCS811 para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
 
-# 4.- Representación de datos.
+# 5.- Representación de datos.
 
 # BasicUsageM5Stack.ino
 
