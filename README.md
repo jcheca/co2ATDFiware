@@ -45,7 +45,7 @@ El resultado final, antes de "envasar":
 
 El sensor:
 
-![Alt text](images/mh-z14.png?raw=true "Sensor CO2 MH-Z14")
+![Alt text](images/mhz14a.jpeg?raw=true "Sensor CO2 MH-Z14")
 
 
 # 4.- Códigos de programación.
