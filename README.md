@@ -43,7 +43,7 @@ El resultado final, antes de "envasar":
 
 # 3.- Sensor MHZ14 con NodeMCU V3.0.0.
 
-El sensor:
+El sensor MH-Z14a y la placa NodeMCU:
 
 ![Alt text](images/mhz14a.jpeg?raw=true "Sensor CO2 MH-Z14")
 
