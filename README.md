@@ -52,7 +52,7 @@ El sensor MH-Z14a y la placa NodeMCU:
 
 Los códigos correspondientes a la conexión WiFi de los ESP8266 (NodeMCU), la recogida de los datos del sensor y la subida de los mismos al Stack FiWare del Aula de Transformación Digital FiWare de la Universidad de Córdoba es el que describimos a continuación dependiendo del tipo de MCU:
 
-# * BasicUsageMHZ19.ino (for MHZ19)
+# * BasicUsageMHZ19.ino (for NodeMCU V3)
 
 Es el programa de .ino encargado de realizar la operación descrita anteriormente por el sensor MHZ19 para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
 
@@ -60,7 +60,7 @@ Es el programa de .ino encargado de realizar la operación descrita anteriorment
 
 Es el programa de .ino encargado de realizar la operación descrita anteriormente por el sensor CCS811 para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
 
-# * BasicUsageMHZ14A.ino (for NodeMCU Amica ESP8266-E)
+# * BasicUsageMHZ14A.ino (for NodeMCU V3)
 
 Es el programa de .ino encargado de realizar la operación descrita anteriormente por el sensor MHZ14a para poder recuperar los datos y inyectartlos en el Stack de FiWare para que puedan ser consumidos por protocolo o por datos abiertos.
 
