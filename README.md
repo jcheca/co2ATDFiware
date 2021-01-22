@@ -78,5 +78,10 @@ Haz click en la imagen para ver video con una prueba:
 
 [![Ver VIDEO](images/M5Stack.jpeg?raw=true)](https://youtu.be/c4iqZGf_Hb8)
 
+# 6.- ATDFiWareSonda.ino
+
+Versión mejorada de "BasicUsageMHZ19.ino (for MHZ19)" donde se incorpora portal cautivo para la configuración de la WiFi y pantalla OLED.
+
+
 
 
